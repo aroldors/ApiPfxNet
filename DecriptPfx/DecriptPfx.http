@@ -1,6 +1,0 @@
-@DecriptPfx_HostAddress = http://localhost:8081
-
-GET {{DecriptPfx_HostAddress}}/DecriptPfx/
-Accept: application/json
-
-###

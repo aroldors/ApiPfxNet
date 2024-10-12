@@ -1,7 +1,0 @@
-[build]
-builder = "dockerfile"
-dockerfilePath = "./DecriptPfx/Dockerfile"
-
-[deploy]
-startCommand = "dotnet DecriptPfx.dll"
-restartPolicyType = "never"
