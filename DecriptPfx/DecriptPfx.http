@@ -1,0 +1,9 @@
+@DecriptPfx_HostAddress = http://localhost:5115
+
+GET {{DecriptPfx_HostAddress}}/weatherforecast/
+Accept: application/json
+
+POST {{DecriptPfx_HostAddress}}/pfx/
+Accept: application/json
+
+###
