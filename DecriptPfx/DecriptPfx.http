@@ -1,0 +1,6 @@
+@DecriptPfx_HostAddress = http://localhost:5093
+
+POST {{DecriptPfx_HostAddress}}/DecriptPfx/
+Accept: application/json
+
+###
