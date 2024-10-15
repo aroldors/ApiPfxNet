@@ -10,7 +10,7 @@ ARG configuration=Release
 WORKDIR /DecriptPfx
 COPY ["DecriptPfx/DecriptPfx.csproj", "DecriptPfx/"]
 #COPY ["ApiPfx/ApiPfx.csproj", "ApiPfx/"]
-RUN dotnet restore "./ApiPfxNet/DecriptPfx/DecriptPfx.csproj"
+RUN dotnet restore "./DecriptPfx/DecriptPfx.csproj"
 
 COPY . .
 WORKDIR "/ApiPfxNet/DecriptPfx"
