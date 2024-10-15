@@ -8,7 +8,7 @@ EXPOSE 8080
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG configuration=Release
 WORKDIR /DecriptPfx
-COPY ["ApiPfxNet/DecriptPfx/DecriptPfx.csproj", "ApiPfxNet/DecriptPfx/"]
+COPY ["DecriptPfx/DecriptPfx.csproj", "DecriptPfx/"]
 #COPY ["ApiPfx/ApiPfx.csproj", "ApiPfx/"]
 RUN dotnet restore "./ApiPfxNet/DecriptPfx/DecriptPfx.csproj"
 
