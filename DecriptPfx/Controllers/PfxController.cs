@@ -36,7 +36,7 @@ namespace DecriptPfx.Controllers
                 var cnpj = ExtractCnpj(subject);
                 var companyName = ExtractCompanyName(subject);
 
-                var result = new
+                var result = new Certificate
                 {
                     ValidFrom = validFrom,
                     ValidTo = validTo,
@@ -44,6 +44,16 @@ namespace DecriptPfx.Controllers
                     CompanyName = companyName
                 };
 
+
+/*
+                var result = new
+                {
+                    ValidFrom = validFrom,
+                    ValidTo = validTo,
+                    CNPJ = cnpj,
+                    CompanyName = companyName
+                };
+*/
                 return Ok(result);
             }
             catch (Exception ex)
