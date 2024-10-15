@@ -13,7 +13,7 @@ COPY ["DecriptPfx/DecriptPfx.csproj", "DecriptPfx/"]
 RUN dotnet restore "./DecriptPfx/DecriptPfx.csproj"
 
 COPY . .
-WORKDIR "/ApiPfxNet/DecriptPfx"
+WORKDIR "/DecriptPfx"
 RUN dotnet build "./DecriptPfx.csproj" -c $configuration -o /app/build
 
 FROM build AS publish
