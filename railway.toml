@@ -1,7 +1,7 @@
 [build]
 builder = "dockerfile"
-dockerfilePath = "./ApiPfxNet/Dockerfile"
+dockerfilePath = "./DecriptPfx/Dockerfile"
 
 [deploy]
-startCommand = "./ApiPfxNet"
+startCommand = "./DecriptPfx"
 restartPolicyType = "always"
